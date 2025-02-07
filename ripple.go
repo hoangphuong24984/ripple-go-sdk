@@ -1,4 +1,4 @@
-// Author: elvis (crypto man)
+// Author: crypto man
 // Date: 2025
 // Description: Code for transfer XRP
 // Version: 1.0.0
