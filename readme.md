@@ -11,12 +11,23 @@ Key Features:
 **Create New XRP Wallets**: Automatically generate new XRP wallet addresses and private keys, allowing you to create wallets on the fly.
 **Fully Commented Code**: Includes thorough inline comments to help you understand the code and adapt it to your own needs.
 
-Included Files:
-`xrp_send.go`: Complete Go code for sending XRP transactions.
-`xrp_balance.go`: Code for checking the balance of a wallet address.
-`xrp_tx_info.go`: Code for fetching details of specific transactions.
-`xrp_block_txs.go`: Code for fetching all transactions from a block.
-`xrp_wallet_create.go`: Code for creating new XRP wallets.
+```
+func (suite *RippleTestSuite) TestTransfer() {
+
+	rippleClient := NewXRPLClient(true)
+
+	fromAddress := "rJqqJzpivdmRwHQ5a3t3WbizJHjQrZYtG6"
+	fromPrivateKey := "..."
+
+	toAddress := "rHNvvvUCJpnJJbbvHaW5EBMP5dhQmieKEv"
+
+	amount := big.NewInt(1 * 1e6)
+	tx, err := rippleClient.Transfer(fromPrivateKey, fromAddress, toAddress, amount)
+
+	fmt.Println("tx, err: ", tx, err)
+}
+```
+
 
 Requirements:
 Golang (Go 1.16+ recommended)
