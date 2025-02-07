@@ -44,4 +44,4 @@ Whether you're building a payment gateway, a wallet management system, or a bloc
 
 Get started today with this complete, ready-to-use solution for interacting with the XRP Ledger in Golang!
 
-Code download: https://ko-fi.com/s/e2418f3b27
+Full code download: https://ko-fi.com/s/e2418f3b27
