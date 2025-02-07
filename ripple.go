@@ -2,6 +2,7 @@
 // Date: 2025
 // Description: Code for transfer XRP
 // Version: 1.0.0
+// Full code download: https://ko-fi.com/s/e2418f3b27
 
 import (
 	"encoding/hex"
